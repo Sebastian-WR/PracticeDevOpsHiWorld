@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  product-service:
+    build: ./FirstJobCompose
+    ports:
+      - 5001:9090
+  login-service:
+    build: ./FirstJob
+    ports:
+      - 5002:9090
